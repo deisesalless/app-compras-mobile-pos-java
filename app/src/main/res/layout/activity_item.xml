@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ItemActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ItemActivity">
+
+        <TextView
+            android:id="@+id/textViewNomeItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/editTextCampoNomeItem"
+            android:text="@string/text_view_nome_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextCampoNomeItem"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/dica_nome_item"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewNomeItem"
+            app:layout_constraintTop_toBottomOf="@id/textViewNomeItem" />
+
+        <TextView
+            android:id="@+id/textViewQuantidadeItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/editTextNumberQuantidade"
+            android:text="@string/text_view_quantidade_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCampoNomeItem" />
+
+        <EditText
+            android:id="@+id/editTextNumberQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/dica_quantidade_item"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewQuantidadeItem"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuantidadeItem" />
+
+        <TextView
+            android:id="@+id/textViewValorUnitario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/editTextNumberDecimalValorUnitario"
+            android:text="@string/text_view_valor_unitario_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberQuantidade" />
+
+        <EditText
+            android:id="@+id/editTextNumberDecimalValorUnitario"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewValorUnitario"
+            app:layout_constraintTop_toBottomOf="@+id/textViewValorUnitario" />
+
+        <TextView
+            android:id="@+id/textViewCategoriaItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/spinnerCategoriaItem"
+            android:text="@string/text_view_categoria"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalValorUnitario" />
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaItem"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/spinner_item_categorias"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewCategoriaItem"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategoriaItem" />
+
+        <TextView
+            android:id="@+id/textViewUnidadeDeMedida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/radioGroupItem"
+            android:text="@string/text_view_unidade_de_medida"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCategoriaItem" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/textViewUnidadeDeMedida"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUnidadeDeMedida">
+
+            <RadioButton
+                android:id="@+id/radioButtonUnidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_button_forma_unidade" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_button_kg" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBoxItemPerecivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_box_item_perecivel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

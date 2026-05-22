@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.ListaCompras" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/verde_principal</item>
+        <item name="colorPrimaryContainer">@color/verde_claro</item>
+        <item name="colorOnPrimary">@color/branco</item>
+
+        <item name="android:colorBackground">@color/branco</item>
+        <item name="android:textColor">@color/preto</item>
+    </style>
+
+</resources>

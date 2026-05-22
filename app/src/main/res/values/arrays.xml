@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_item_categorias">
+        <item>@string/dado_tipo_item_spinner_hortifruti</item>
+        <item>@string/dado_tipo_item_spinner_carnes_aves</item>
+        <item>@string/dado_tipo_item_spinner_peixes_frutos_do_mar</item>
+        <item>@string/dado_tipo_item_spinner_laticinios</item>
+        <item>@string/dado_tipo_item_spinner_padaria</item>
+        <item>@string/dado_tipo_item_spinner_graos_cereais</item>
+        <item>@string/dado_tipo_item_spinner_massas_molhos</item>
+        <item>@string/dado_tipo_item_spinner_enlatados_conservas</item>
+        <item>@string/dado_tipo_item_spinner_congelados</item>
+        <item>@string/dado_tipo_item_spinner_bebidas</item>
+        <item>@string/dado_tipo_item_spinner_produtos_limpeza</item>
+        <item>@string/dado_tipo_item_spinner_higiene_pessoal</item>
+    </string-array>
+
+    <string-array name="itens_nomes">
+        <item>Arroz Parboilizado</item>
+        <item>Feijão Preto</item>
+        <item>Leite Integral</item>
+        <item>Café Torrado</item>
+        <item>Açúcar Mascavo</item>
+        <item>Óleo de Soja</item>
+        <item>Pão de Forma</item>
+        <item>Manteiga com Sal</item>
+        <item>Detergente de Maçã</item>
+        <item>Sabão em Barra</item>
+    </string-array>
+
+    <integer-array name="itens_quantidades">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>1</item>
+        <item>3</item>
+        <item>8</item>
+        <item>4</item>
+        <item>6</item>
+        <item>9</item>
+        <item>7</item>
+    </integer-array>
+
+    <string-array name="itens_preco">
+        <item>25.90</item>
+        <item>8.50</item>
+        <item>4.20</item>
+        <item>15.00</item>
+        <item>3.75</item>
+        <item>12.99</item>
+        <item>6.40</item>
+        <item>9.15</item>
+        <item>2.50</item>
+        <item>7.80</item>
+    </string-array>
+
+    <string-array name="itens_categoria">
+        <item>Grãos e Cereais</item>
+        <item>Grãos e Cereais</item>
+        <item>Laticínios</item>
+        <item>Bebidas</item>
+        <item>Grãos e Cereais</item>
+        <item>Grãos e Cereais</item>
+        <item>Padaria</item>
+        <item>Laticínios</item>
+        <item>Produtos de Limpeza</item>
+        <item>Produtos de Limpeza</item>
+    </string-array>
+
+    <integer-array name="itens_forma_de_medida">
+        <item>0</item> <!-- Kg -->
+        <item>0</item> <!-- Kg -->
+        <item>1</item> <!-- Unidade -->
+        <item>1</item> <!-- Unidade -->
+        <item>0</item> <!-- Kg -->
+        <item>1</item> <!-- Unidade -->
+        <item>1</item> <!-- Unidade -->
+        <item>1</item> <!-- Unidade -->
+        <item>1</item> <!-- Unidade -->
+        <item>1</item> <!-- Unidade -->
+    </integer-array>
+
+    <integer-array name="itens_e_perecivel">
+        <item>0</item> <!-- Não -->
+        <item>0</item> <!-- Não -->
+        <item>1</item> <!-- Sim -->
+        <item>0</item> <!-- Não -->
+        <item>0</item> <!-- Não -->
+        <item>0</item> <!-- Não -->
+        <item>1</item> <!-- Sim -->
+        <item>1</item> <!-- Sim -->
+        <item>0</item> <!-- Não -->
+        <item>0</item> <!-- Não -->
+    </integer-array>
+</resources>

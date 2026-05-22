@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cor principal da logo -->
+    <color name="verde_principal">#36AE88</color>
+
+    <!-- Variações do verde -->
+    <color name="verde_claro">#5BC6A3</color>
+    <color name="verde_escuro">#2B8C6D</color>
+
+    <!-- Fundo da logo -->
+    <color name="verde_logo_background">#36AE88</color>
+
+    <!-- Base -->
+    <color name="branco">#FFFFFFFF</color>
+    <color name="preto">#FF000000</color>
+
+    <!-- Cinzas para textos secundários -->
+    <color name="cinza_claro">#F2F2F2</color>
+    <color name="cinza_medio">#BDBDBD</color>
+    <color name="cinza_escuro">#757575</color>
+
+    <color name="ic_launcher_logo_background">#FAFAFA</color>
+</resources>

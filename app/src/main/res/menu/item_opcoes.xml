@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemSalvar"
+        android:icon="@drawable/icon_save"
+        android:title="@string/botton_salvar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemLimpar"
+        android:icon="@drawable/icon_clean"
+        android:title="@string/button_limpar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemSugerirTipo"
+        android:checkable="true"
+        android:title="@string/titulo_sugerir_tipo" />
+</menu>
